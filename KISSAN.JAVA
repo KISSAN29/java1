@@ -174,3 +174,27 @@ Scanner sc = new Scanner(System.in);
 }
 
 }    
+
+10
+
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+
+    String result1 = (a >= 1) ? "yes" : "no";
+    String result2 = (b >= 2) ? "yes" : "no";
+
+    System.out.println(result1);
+    System.out.println(result2);
+
+   
+}
+
+
+}
