@@ -198,3 +198,231 @@ Scanner sc = new Scanner(System.in);
 
 
 }
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        while (n > 0){
+            int digit = n % 10;
+            sum = sum + digit;
+            n = n / 10;
+        }
+           System.out.println("Sum of digits = " + sum);
+        
+    }
+}
+
+
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+         int b = sc.nextInt();
+              int gcd = 1;
+            int limit  = Math.min(a,b);
+        for (int i = 1; i <= limit; i++){
+            if (a % i == 0 && b % i == 0){
+                gcd = i;
+            }
+        }
+    System.out.println("GCD =" + gcd);
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int reverse = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            reverse = reverse * 10 + digit;
+            n = n / 10;
+        }
+
+        System.out.println("Reverse = " + reverse);
+
+        sc.close();
+    }
+}
+
+
+import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a[][] = new int[3][3];
+        boolean identity = true;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                a[i][j] = sc.nextInt();
+            }
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (i == j && a[i][j] != 1) {
+                    identity = false;
+                } else if (i != j && a[i][j] != 0) {
+                    identity = false;
+                }
+            }
+        }
+        if (identity) {
+            System.out.println("identity matrix");
+        } else {
+            System.out.println("not an identity matrix");
+        }
+    }
+}
+
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String S = sc.nextLine();
+        String[] words = S.split(" ");
+        String result = "";
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            for (int j = word.length() - 1; j >= 0; j--) {
+                result += word.charAt(j);
+            }
+            if (i < words.length - 1) {
+                result += " ";
+            }
+        }
+        System.out.println(result);
+    }
+}
+
+
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        while (n > 0){
+            int digit = n % 10;
+            sum = sum + digit;
+            n = n / 10;
+        }
+           System.out.println("Sum of digits = " + sum);
+        
+    }
+}
+
+
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+         int b = sc.nextInt();
+              int gcd = 1;
+            int limit  = Math.min(a,b);
+        for (int i = 1; i <= limit; i++){
+            if (a % i == 0 && b % i == 0){
+                gcd = i;
+            }
+        }
+    System.out.println("GCD =" + gcd);
+    }
+}
+
+
+
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int reverse = 0;
+
+        while (n > 0) {
+            int digit = n % 10;
+            reverse = reverse * 10 + digit;
+            n = n / 10;
+        }
+
+        System.out.println("Reverse = " + reverse);
+
+        sc.close();
+    }
+}
+
+
+import java.util.*;
+public class main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a[][] = new int[3][3];
+        boolean identity = true;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                a[i][j] = sc.nextInt();
+            }
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (i == j && a[i][j] != 1) {
+                    identity = false;
+                } else if (i != j && a[i][j] != 0) {
+                    identity = false;
+                }
+            }
+        }
+        if (identity) {
+            System.out.println("identity matrix");
+        } else {
+            System.out.println("not an identity matrix");
+        }
+    }
+}
+
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String S = sc.nextLine();
+        String[] words = S.split(" ");
+        String result = "";
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            for (int j = word.length() - 1; j >= 0; j--) {
+                result += word.charAt(j);
+            }
+            if (i < words.length - 1) {
+                result += " ";
+            }
+        }
+        System.out.println(result);
+    }
+}
