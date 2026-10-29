@@ -426,3 +426,32 @@ public class Main {
         System.out.println(result);
     }
 }
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first word:");
+        String s1 = sc.nextLine();
+
+        System.out.println("Enter the second word:");
+        String s2 = sc.nextLine();
+
+        if (s1.length() != s2.length()) {
+            System.out.println("Not Anagram");
+        } else {
+            char[] a = s1.toCharArray();
+            char[] b = s2.toCharArray();
+
+            java.util.Arrays.sort(a);
+            java.util.Arrays.sort(b);
+
+            if (java.util.Arrays.equals(a, b)) {
+                System.out.println("Anagram");
+            } else {
+                System.out.println("not Anagram");
+            }
+        }
+    }
+}
